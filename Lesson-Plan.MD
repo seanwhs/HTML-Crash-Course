@@ -1,50 +1,201 @@
-# **HTML 1-Day Crash Course – Lesson Plan**
+# **Lesson Plan: How the Web Works & HTML Basics (Beginner)**
 
-**Target Audience:** Beginners with little or no coding experience
-**Duration:** 6–8 hours
-**Learning Outcome:** By the end of the session, learners can create a structured HTML webpage with headings, text, links, images, tables, forms, and semantic layout.
-
----
-
-## **Lesson Plan Overview**
-
-| Time      | Topic                              | Learning Objectives                                                             | Teaching Method           | Activities                                                                                                      |
-| --------- | ---------------------------------- | ------------------------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| 30 min    | **Introduction & Setup**           | - Understand what HTML is<br>- Set up coding environment                        | Lecture + Demo            | - Show HTML structure (`index.html`)<br>- Learners create “Hello World” page                                    |
-| 60 min    | **Text, Headings, Lists & Links**  | - Use headings and paragraphs<br>- Format text<br>- Create lists and hyperlinks | Lecture + Guided Practice | - Learners build an “About Me” page with headings, paragraphs, lists, links                                     |
-| 45 min    | **Images & Multimedia**            | - Add images, audio, video to pages<br>- Use alt text for accessibility         | Demo + Hands-on           | - Learners insert an image and a video/audio file on their page                                                 |
-| 30 min    | **Tables**                         | - Display tabular data using HTML                                               | Lecture + Practice        | - Learners create a table (schedule, data, or sample info)                                                      |
-| 60 min    | **Forms**                          | - Create input forms<br>- Understand form elements and attributes               | Lecture + Hands-on        | - Learners build a contact form with name, email, message, submit button                                        |
-| 30 min    | **Semantic HTML & Best Practices** | - Structure content semantically<br>- Apply accessibility best practices        | Lecture + Demo            | - Learners restructure their page using `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`                  |
-| 90 min    | **Final Project**                  | - Combine all elements to build a complete webpage                              | Guided Practice           | - Learners build a small multi-section webpage including text, images, lists, links, forms, and semantic layout |
-| 15–30 min | **Wrap-Up & Resources**            | - Review concepts<br>- Provide further learning paths                           | Lecture + Discussion      | - Share MDN, W3Schools, CodePen links<br>- Q&A session                                                          |
+**Grade / Level:** Beginner / Intro to Web
+**Duration:** 50–55 minutes
+**Objective:** Students will understand how the web works and gain practical knowledge of HTML, including page structure, core tags, semantic HTML, multimedia, tables, forms, and styling with CSS. By the end of the lesson, students will be able to create a basic webpage with semantic structure, text, images, links, and a simple form.
 
 ---
 
 ## **Materials Needed**
 
-* Computer/laptop with code editor installed (VS Code recommended)
-* Web browser (Chrome, Firefox, Edge)
-* Projector for demonstrations
-* Example images, audio, or video files for exercises
-* Optional: Printed learner guide/workbook
+* Projector or screen for slides
+* Web browser (for live demo)
+* Code editor (VS Code, Sublime Text, Atom, etc.)
+* Sample HTML/CSS files for demonstrations
+* Optional: internet connection for live examples
 
 ---
 
-## **Teaching Tips**
+## **Lesson Outline**
 
-1. Alternate **lecture and hands-on practice** to keep learners engaged.
-2. Encourage experimentation with tags and attributes.
-3. Use **live coding** to demonstrate errors and corrections.
-4. Provide **small challenges** after each topic to reinforce learning.
-5. Walk around and **assist learners individually** during exercises.
+### **1. Introduction: The Web & the Browser (5 min)**
+
+**Objective:** Students understand what happens when a web page loads.
+
+**Activities:**
+
+* Ask: *“What do you think happens when you type a URL into a browser?”*
+* Explain key concepts:
+
+  * **Client vs. Server**: Browser (client) requests data; server responds.
+  * **URL**: Uniform Resource Locator, tells the browser where to find resources.
+* Visual: Slide showing client-server interaction diagram.
+* Quick demo: Open a website and show network request in DevTools.
 
 ---
 
-## **Assessment / Checkpoints**
+### **2. Request/Response Cycle & HTTP Basics (5–7 min)**
 
-* Observe learners during hands-on exercises
-* Ask learners to explain their code after each section
-* Final project serves as a summative assessment
+**Objective:** Students understand how browsers communicate with servers.
+
+**Content:**
+
+* Explain **HTTP/HTTPS**: Hypertext Transfer Protocol, secure vs. non-secure.
+* Discuss **status codes**: 200 OK, 404 Not Found, 500 Internal Server Error.
+* Highlight encryption importance in HTTPS.
+
+**Activity / Demo:**
+
+* Open DevTools > Network tab. Refresh page. Inspect request/response headers and status codes.
+* Optional: Compare HTTP vs HTTPS requests.
 
 ---
+
+### **3. Introduction to HTML: Structure & Core Tags (10 min)**
+
+**Objective:** Students understand the basic building blocks of a webpage.
+
+**Content:**
+
+* Define HTML: HyperText Markup Language, used to structure content on webpages.
+
+* Explain tags, elements, and attributes:
+
+  * Paired tags: `<p>Text</p>`
+  * Singlet tags: `<br>`, `<hr>`, `<img>`
+  * Attributes: `src`, `alt`, `href`, `id`, `class`
+
+* Walk through **basic HTML structure**:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Web Page</title>
+</head>
+<body>
+  <h1>Welcome to My Web Page</h1>
+  <p>This is a paragraph of text.</p>
+</body>
+</html>
+```
+
+* Explain headings `<h1>`–`<h6>`, paragraphs `<p>`, and formatting: `<strong>`, `<em>`, `<mark>`.
+
+**Activity / Demo:**
+
+* Edit HTML live in code editor and refresh browser.
+
+---
+
+### **4. Lists, Links, and Multimedia (8 min)**
+
+**Objective:** Students learn how to organize content, create links, and embed multimedia.
+
+**Content:**
+
+* **Lists**:
+
+  * Unordered `<ul>` & ordered `<ol>` lists
+  * List items `<li>`
+* **Links**: `<a href="URL">Clickable text</a>`
+
+  * Internal vs external links
+* **Images**: `<img src="image.jpg" alt="Description">`
+* **Audio & Video**: `<audio controls>` and `<video controls>`
+
+**Activity / Demo:**
+
+* Embed a small image, audio, and video in a sample HTML page.
+* Inspect them in the browser and explain attributes.
+
+---
+
+### **5. CSS: Styling Your Page (5 min)**
+
+**Objective:** Students understand how CSS works with HTML to style webpages.
+
+**Content:**
+
+* Explain CSS role: color, fonts, spacing, layout.
+* Introduce inline CSS, internal CSS (`<style>`), and external CSS (`link rel="stylesheet"`).
+* Quick demo: change background color or font using DevTools.
+
+---
+
+### **6. Tables & Forms (10 min)**
+
+**Objective:** Students learn how to structure tabular data and collect user input.
+
+**Tables:**
+
+* Tags: `<table>`, `<tr>`, `<th>`, `<td>`
+* Optional attributes: `border`, `colspan`, `rowspan`, `align`, `cellpadding`, `cellspacing`
+
+**Forms:**
+
+* Tags: `<form>`, `<input>`, `<textarea>`, `<select>`, `<option>`
+* Input types: text, email, radio, checkbox, submit, reset
+* Accessibility: pair inputs with `<label>`
+
+**Activity / Demo:**
+
+* Create a small form with name, email, gender (radio), favorite color (checkbox), and a submit button.
+* Show live result in browser.
+
+---
+
+### **7. Semantic HTML & Best Practices (5 min)**
+
+**Objective:** Students understand semantic structure and why it matters.
+
+**Content:**
+
+* Tags: `<header>`, `<footer>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`
+* Benefits: accessibility, SEO, maintainable code
+* Best practices:
+
+  * Meaningful alt text for images
+  * Clean, readable code with proper indentation
+  * Test across multiple browsers
+
+**Activity / Demo:**
+
+* Open a sample page showing semantic structure and discuss navigation.
+
+---
+
+### **8. Summary & Review (3–5 min)**
+
+* Recap key points:
+
+  * Browser ↔ Server
+  * HTTP request/response
+  * HTML structure, headings, paragraphs
+  * Lists, links, images, audio/video
+  * Tables and forms
+  * CSS styling and semantic HTML
+* Quick Q&A: Ask students to identify tags and elements on a live website.
+
+---
+
+### **Optional Extension / Homework**
+
+* Build a **multi-section HTML page**: headings, paragraphs, lists, links, images, forms, semantic layout
+* Inspect request/response in DevTools
+* Apply CSS styling
+
+---
+
+✅ **Improvements Made:**
+
+* Clear learning objectives for each section
+* More interactive demos and activities
+* Expanded HTML content: lists, links, multimedia, tables, forms, semantic HTML
+* Beginner-friendly language with teaching cues
+* Integrated CSS styling context
+
+---
+

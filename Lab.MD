@@ -1,378 +1,235 @@
-# **HTML 1-Day Crash Course – Lab Guide**
+# **Lab: How the Web Works & HTML Basics**
 
-**Objective:** Practice core HTML concepts including text, links, images, lists, tables, forms, and semantic layout.
-
----
-
-## **Lab 1: Basic HTML Structure (30 min)**
-
-**Tasks:**
-
-1. Create a new file called `index.html`.
-2. Add the basic HTML boilerplate:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Webpage</title>
-  </head>
-  <body>
-    <!-- Content will go here -->
-  </body>
-</html>
-```
-
-3. Add a `<p>` tag inside `<body>` with text “Hello World!”.
+**Level:** Beginner
+**Duration:** 60–75 minutes
+**Objective:** Students will apply concepts of web structure, HTML, CSS, forms, tables, and multimedia to build a functional webpage.
 
 ---
 
-## **Lab 2: Text, Headings & Lists (45 min)**
+## **Materials Needed**
 
-**Tasks:**
-
-1. Add headings `<h1>` to `<h3>` with sample text.
-2. Add three paragraphs `<p>` with some text, using `<strong>` and `<em>` for emphasis.
-3. Create an **unordered list** of your hobbies.
-4. Create an **ordered list** of steps to make tea or coffee.
+* Computer with a web browser (Chrome, Firefox, Edge)
+* Code editor (VS Code, Sublime Text, Atom)
+* Sample images, audio, and video files (optional)
+* Internet connection (optional, for reference/demo sites)
 
 ---
 
-## **Lab 3: Links (30 min)**
+## **Lab Exercises**
 
-**Tasks:**
+### **Exercise 1: Understanding the Web (10 min)**
 
-1. Add a link to your favorite website using `<a href="URL" target="_blank">`.
-2. Create an **internal link** to another section in the same page using an `id` attribute.
+**Goal:** Visualize how the browser and server communicate.
 
----
+**Steps:**
 
-## **Lab 4: Images & Multimedia (30 min)**
+1. Open a web browser and go to any simple website (e.g., example.com).
+2. Open **Developer Tools** (F12) → Network tab.
+3. Refresh the page. Observe the requests listed: HTML, CSS, images, scripts.
+4. Identify at least one **HTTP status code** (200, 404).
 
-**Tasks:**
+**Reflection Questions:**
 
-1. Add an image with `<img src="image.jpg" alt="Description">`.
-2. Add an audio file with `<audio src="audio.mp3" controls>`.
-3. Add a video file with `<video src="video.mp4" controls></video>`.
-
----
-
-## **Lab 5: Tables (30 min)**
-
-**Tasks:**
-
-1. Create a table with 3 columns: Name, Age, Profession.
-2. Add 2–3 rows of sample data.
-3. Highlight the headers using `<th>`.
+* What files did the browser request?
+* What do the status codes mean?
+* How many requests were made to render the page?
 
 ---
 
-## **Lab 6: Forms (45 min)**
+### **Exercise 2: Basic HTML Structure (15 min)**
 
-**Tasks:**
+**Goal:** Create a simple webpage with headings, paragraphs, and a link.
 
-1. Create a contact form using `<form>`.
+**Steps:**
 
-2. Include the following fields:
-
-   * Name (`<input type="text">`)
-   * Email (`<input type="email">`)
-   * Message (`<textarea>`)
-   * Gender (`<input type="radio">`)
-   * Subscribe (`<input type="checkbox">`)
-   * Submit (`<input type="submit">`)
-
-3. Use `<label>` for each input for accessibility.
-
----
-
-## **Lab 7: Semantic HTML & Layout (30 min)**
-
-**Tasks:**
-
-1. Restructure your page using semantic tags:
-
-   * `<header>` – for page title and navigation
-   * `<nav>` – for menu links
-   * `<main>` – for main content
-   * `<section>` – for grouped content
-   * `<article>` – for individual content blocks
-   * `<aside>` – for sidebar
-   * `<footer>` – for copyright and contact info
-
-2. Move your previous content into the semantic sections appropriately.
-
----
-
-## **Lab 8: Final Mini Project (1–1.5 hours)**
-
-**Tasks:**
-
-1. Combine everything learned:
-
-   * Header with a page title and navigation
-   * Two or more content sections with headings, paragraphs, lists, and images
-   * Table for sample data
-   * Contact form
-   * Footer with links or copyright
-
-2. Ensure semantic structure and proper indentation.
-
----
-
-# **HTML 1-Day Crash Course – Lab Solutions**
-
----
-
-## **Solution 1: Basic HTML Structure**
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>My Webpage</title>
-  </head>
-  <body>
-    <p>Hello World!</p>
-  </body>
-</html>
-```
-
----
-
-## **Solution 2: Text, Headings & Lists**
-
-```html
-<h1>My Webpage</h1>
-<h2>About Me</h2>
-<h3>Hobbies</h3>
-
-<p>This is a <strong>bold</strong> word and an <em>italic</em> word.</p>
-<p>I enjoy learning <strong>HTML</strong> and <em>CSS</em>.</p>
-<p>Practice makes <em>perfect</em>!</p>
-
-<ul>
-  <li>Reading</li>
-  <li>Coding</li>
-  <li>Music</li>
-</ul>
-
-<ol>
-  <li>Boil water</li>
-  <li>Add tea/coffee</li>
-  <li>Serve in cup</li>
-</ol>
-```
-
----
-
-## **Solution 3: Links**
-
-```html
-<p>Visit <a href="https://www.example.com" target="_blank">Example Website</a></p>
-
-<h2 id="contact">Contact Section</h2>
-<p>Go to <a href="#contact">Contact Section</a></p>
-```
-
----
-
-## **Solution 4: Images & Multimedia**
-
-```html
-<img src="profile.jpg" alt="My Profile Picture">
-
-<audio src="audio.mp3" controls></audio>
-
-<video src="video.mp4" controls width="320" height="240"></video>
-```
-
----
-
-## **Solution 5: Tables**
-
-```html
-<table border="1">
-  <tr>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Profession</th>
-  </tr>
-  <tr>
-    <td>Alice</td>
-    <td>25</td>
-    <td>Developer</td>
-  </tr>
-  <tr>
-    <td>Bob</td>
-    <td>30</td>
-    <td>Designer</td>
-  </tr>
-</table>
-```
-
----
-
-## **Solution 6: Forms**
-
-```html
-<form>
-  <label>Name: <input type="text" name="name" required></label><br>
-  <label>Email: <input type="email" name="email" required></label><br>
-  <label>Message: <textarea name="message"></textarea></label><br>
-
-  Gender:
-  <label>Male <input type="radio" name="gender" value="male"></label>
-  <label>Female <input type="radio" name="gender" value="female"></label><br>
-
-  <label>Subscribe: <input type="checkbox" name="subscribe"></label><br>
-
-  <input type="submit" value="Submit">
-</form>
-```
-
----
-
-## **Solution 7: Semantic HTML & Layout**
-
-```html
-<header>
-  <h1>My Webpage</h1>
-  <nav>
-    <a href="#about">About</a> |
-    <a href="#hobbies">Hobbies</a> |
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>This is a short introduction about myself.</p>
-  </section>
-
-  <section id="hobbies">
-    <h2>Hobbies</h2>
-    <ul>
-      <li>Reading</li>
-      <li>Coding</li>
-      <li>Music</li>
-    </ul>
-  </section>
-
-  <aside>
-    <h3>Sidebar</h3>
-    <p>Additional information goes here.</p>
-  </aside>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <form>
-      <label>Name: <input type="text" name="name"></label><br>
-      <label>Email: <input type="email" name="email"></label><br>
-      <input type="submit" value="Submit">
-    </form>
-  </section>
-</main>
-
-<footer>
-  <p>&copy; 2025 My Webpage</p>
-</footer>
-```
-
----
-
-## **Solution 8: Final Mini Project (Full Example)**
+1. Open your code editor and create a new file named `index.html`.
+2. Add the basic HTML structure:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My HTML Crash Course Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Webpage</title>
 </head>
 <body>
-
-<header>
-  <h1>My Webpage</h1>
-  <nav>
-    <a href="#about">About</a> |
-    <a href="#hobbies">Hobbies</a> |
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I am a web development beginner learning HTML.</p>
-    <img src="profile.jpg" alt="Profile Picture" width="200">
-  </section>
-
-  <section id="hobbies">
-    <h2>Hobbies</h2>
-    <ul>
-      <li>Reading</li>
-      <li>Coding</li>
-      <li>Music</li>
-    </ul>
-    <ol>
-      <li>Wake up</li>
-      <li>Code</li>
-      <li>Relax</li>
-    </ol>
-  </section>
-
-  <aside>
-    <h3>Sidebar</h3>
-    <p>Extra info, links, or announcements.</p>
-  </aside>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <form>
-      <label>Name: <input type="text" name="name"></label><br>
-      <label>Email: <input type="email" name="email"></label><br>
-      <label>Message: <textarea name="message"></textarea></label><br>
-      <input type="submit" value="Submit">
-    </form>
-  </section>
-
-  <section id="media">
-    <h2>Media</h2>
-    <img src="image.jpg" alt="Sample Image" width="200"><br>
-    <audio src="audio.mp3" controls></audio><br>
-    <video src="video.mp4" controls width="320"></video>
-  </section>
-
-  <section id="table">
-    <h2>Sample Table</h2>
-    <table border="1">
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Profession</th>
-      </tr>
-      <tr>
-        <td>Alice</td>
-        <td>25</td>
-        <td>Developer</td>
-      </tr>
-      <tr>
-        <td>Bob</td>
-        <td>30</td>
-        <td>Designer</td>
-      </tr>
-    </table>
-  </section>
-</main>
-
-<footer>
-  <p>&copy; 2025 My Webpage</p>
-</footer>
 
 </body>
 </html>
 ```
+
+3. Inside `<body>`, add:
+
+* One heading (`<h1>`)
+* One paragraph (`<p>`)
+* One link (`<a>`) to a website you like
+
+4. Save the file and open it in your browser.
+
+**Optional Challenge:** Add a second paragraph and a subheading `<h2>`.
+
+---
+
+### **Exercise 3: Lists and Multimedia (10 min)**
+
+**Goal:** Add lists, images, audio, and video to your webpage.
+
+**Steps:**
+
+1. Add an **unordered list** (`<ul>`) with 3 items about your favorite hobbies.
+2. Add an **ordered list** (`<ol>`) with steps to complete a task (e.g., making tea).
+3. Insert an **image** using `<img src="image.jpg" alt="description">`.
+4. Add **audio** and **video** elements:
+
+```html
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<video controls width="320">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+```
+
+5. Save and refresh the page to see the multimedia elements.
+
+---
+
+### **Exercise 4: CSS Styling (10 min)**
+
+**Goal:** Apply basic CSS to style your page.
+
+**Steps:**
+
+1. Inside `<head>`, add a `<style>` block:
+
+```html
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 20px;
+  }
+  h1 {
+    color: #0066cc;
+  }
+  p {
+    line-height: 1.5;
+  }
+</style>
+```
+
+2. Save and refresh your page. Observe changes in font, colors, and spacing.
+3. Optional: Experiment with `text-align`, `border`, or `padding`.
+
+---
+
+### **Exercise 5: Tables (10 min)**
+
+**Goal:** Create a table displaying data.
+
+**Steps:**
+
+1. Add a table with 3 columns: `Name`, `Age`, `Favorite Color`.
+2. Add 3–4 rows of sample data. Example:
+
+```html
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Favorite Color</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>25</td>
+    <td>Blue</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>22</td>
+    <td>Red</td>
+  </tr>
+</table>
+```
+
+3. Save and refresh. Observe the table structure.
+
+---
+
+### **Exercise 6: Forms (10–15 min)**
+
+**Goal:** Create a form to collect user input.
+
+**Steps:**
+
+1. Add a `<form>` inside `<body>`:
+
+```html
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label>Gender:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+
+  <label for="color">Favorite Color:</label>
+  <select id="color" name="color">
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+  </select><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+```
+
+2. Save and open in browser.
+3. Optional: Style the form using CSS.
+
+---
+
+### **Exercise 7: Semantic HTML & Page Layout (5 min)**
+
+**Goal:** Organize content using semantic tags.
+
+**Steps:**
+
+1. Wrap your heading in `<header>` and footer content in `<footer>`.
+2. Use `<main>` for main content, `<section>` for distinct sections, `<article>` for text blocks.
+3. Refresh the page and view the HTML structure using browser DevTools.
+
+---
+
+### **Exercise 8: Reflection & Submission (5 min)**
+
+**Questions:**
+
+1. How did the browser load your webpage? What files were requested?
+2. Which HTML elements did you use for structure, content, and multimedia?
+3. How did CSS change the appearance of your page?
+4. What could you improve to make your page more accessible?
+
+**Submission:**
+
+* Save your `index.html` and any multimedia files used.
+* Submit via your classroom platform or USB drive.
+
+---
+
+✅ **Optional Extensions:**
+
+* Add more sections, headings, images, or a navigation menu.
+* Link multiple HTML pages together with `<a href="page2.html">`.
+* Experiment with advanced CSS (flexbox, grid, hover effects).
 
